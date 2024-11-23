@@ -1,0 +1,62 @@
+# Citations
+
+This file includes all external resources and references used in the development of the DDS Website project.
+
+## Articles and Tutorials
+
+1. [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
+   - Used for understanding Flask framework and its functionalities.
+
+2. [Twilio API Documentation](https://www.twilio.com/docs/usage/api)
+   - Referenced for integrating WhatsApp notifications in the application.
+
+3. [SQLite3 Documentation](https://www.sqlite.org/docs.html)
+   - Consulted for database management and operations.
+
+4. [MongoDB Documentation](https://docs.mongodb.com/)
+   - Used for understanding how to work with MongoDB in the project.
+
+5. [Next cloud calendar] & open source software which is an alternate of Google calendar (https://github.com/nextcloud/calendar)
+   - Used as an alternate of google calendar 
+
+6. [Caldav] (https://devguide.calconnect.org/CalDAV/libraries/)
+   - Used for adding events 
+
+7. [Kaggle datasets for Diabetes detection system](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
+   - Used for Diabetes detection system with chatbot 
+  
+
+## Libraries and Frameworks
+
+1. **Flask** - A micro web framework for Python.
+   - Version: 2.0.x
+
+2. **Express.js** - A minimal and flexible Node.js web application framework.
+   - Version: 4.x
+
+3. **Twilio** - A library for sending messages via Twilio API.
+   - Version: 3.x
+
+4. **NLP Libraries** - Used for natural language processing tasks.
+   - NLTK: [NLTK Documentation](https://www.nltk.org/)
+   - Joblib: [Joblib Documentation](https://joblib.readthedocs.io/en/latest/)
+
+## Code Snippets and Examples
+
+1. Example code for connecting to SQLite:
+   - [SQLite Connection Example](https://www.sqlitetutorial.net/sqlite-python/)
+
+2. Example for setting up Express.js with EJS:
+   - [Express.js with EJS Example](https://www.npmjs.com/package/ejs)
+
+## Additional Resources
+
+1. [GitHub Guides](https://guides.github.com/)
+   - For understanding Git and version control best practices.
+
+2. [Awesome Hackathon Projects](https://github.com/daveverwer/awesome-hackathon-projects)
+   - For inspiration and project ideas.
+
+## Acknowledgments
+
+- Special thanks to the contributors and mentors who provided guidance and support throughout the development of this project.
