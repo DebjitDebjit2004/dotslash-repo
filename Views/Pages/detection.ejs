@@ -1,0 +1,78 @@
+<% layout("/Layouts/boilerplate") %>
+
+    <body class="bg-gray-50 text-gray-800 font-sans">
+
+        <!-- Detection Section -->
+        <section class="container mx-auto py-12 px-6 lg:px-20">
+            <h1 class="text-4xl font-bold text-center text-[#159ccb] mb-10">Diabetes Detection Tool</h1>
+            <form id="detection-form" class="bg-white shadow-lg rounded-lg p-10 space-y-8 max-w-2xl mx-auto">
+                <!-- Age -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="age">Age</label>
+                    <input type="number" id="age" placeholder="Enter your age"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[age]" required />
+                </div>
+
+                <!-- Pregnancy -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="pregnancies">Pregnancy Count</label>
+                    <input type="number" id="pregnancies" placeholder="Enter pregnancy count"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[pregnancies]" />
+                </div>
+
+                <!-- Weight -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="Enter your weight"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[weight]" required />
+                </div>
+
+                <!-- Blood Pressure -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="bloodPressure">Blood Pressure (mmHg)</label>
+                    <input type="number" id="bloodPressure" placeholder="Enter blood pressure"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[bloodPressure]" />
+                </div>
+
+                <!-- Glucose Level -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="glucose">Glucose Level (mg/dL)</label>
+                    <input type="number" id="glucose" placeholder="Enter glucose level"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[glucose]" required />
+                </div>
+
+                <!-- BMI -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="bmi">BMI (kg/m²)</label>
+                    <input type="number" id="bmi" placeholder="Enter BMI"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[bmi]" />
+                </div>
+
+                <!-- Insulin -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="bmi">Insulin</label>
+                    <input type="number" id="bmi" placeholder="Enter Insulin"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[Insulin]" />
+                </div>
+
+                <!-- Diabetes Pedigree -->
+                <div>
+                    <label class="block text-lg font-medium mb-2" for="pedigree">Diabetes Pedigree Function</label>
+                    <input type="number" step="0.01" id="pedigree" placeholder="Enter diabetes pedigree function"
+                        class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                        name="detection[pedigree]" />
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full bg-[#159ccb] text-white py-4 rounded-lg hover:bg-blue-600 transition">Analyze</button>
+            </form>
+        </section>
+    </body>

@@ -1,0 +1,53 @@
+<% layout("/Layouts/boilerplate") %>
+<body>
+    <!-- Main Container -->
+    <div class="container mx-auto py-12 flex flex-col lg:flex-row gap-10">
+        <!-- Left Side: Analysis Results -->
+        <section class="flex-1 bg-white shadow-md rounded-lg p-8">
+            <h1 class="text-4xl font-bold text-[#159ccb] mb-6">Your Diabetes Analysis Results</h1>
+            <div class="space-y-4">
+                <div class="border-b py-3"><strong>Age:</strong> 30</div>
+                <div class="border-b py-3"><strong>Pregnancies:</strong> 2</div>
+                <div class="border-b py-3"><strong>Weight:</strong> 70 kg</div>
+                <div class="border-b py-3"><strong>Blood Pressure:</strong> 130 mmHg</div>
+                <div class="border-b py-3"><strong>Glucose Level:</strong> 145 mg/dL</div>
+                <div class="border-b py-3"><strong>Skin Thickness:</strong> 25 mm</div>
+                <div class="border-b py-3"><strong>Insulin Level:</strong> 85 IU/mL</div>
+                <div class="border-b py-3"><strong>BMI:</strong> 26 kg/m²</div>
+                <div class="border-b py-3"><strong>Diabetes Pedigree:</strong> 0.65</div>
+            </div>
+            <p class="mt-6 font-bold text-lg text-green-600">Based on your inputs, consult a healthcare professional for
+                further guidance.</p>
+        </section>
+
+        <!-- Right Side: Chatbot -->
+        <section class="flex-1 bg-gray-100 shadow-md rounded-lg p-8 flex flex-col justify-between">
+            <div>
+                <h2 class="text-4xl font-bold text-[#159ccb] mb-6">MeCare Chatbot</h2>
+                <div class="space-y-4 h-[400px] overflow-y-auto bg-white p-4 border rounded-lg" id="chat-window">
+                    <div class="text-left mb-4">
+                        <span class="bg-blue-100 p-3 rounded-lg inline-block">Hello! How can I assist you with your
+                            results today?</span>
+                    </div>
+                    <div class="text-right mb-4">
+                        <span class="bg-gray-200 p-3 rounded-lg inline-block">What does a high glucose level
+                            mean?</span>
+                    </div>
+                    <div class="text-left mb-4">
+                        <span class="bg-blue-100 p-3 rounded-lg inline-block">A glucose level above 126 mg/dL indicates
+                            potential diabetes. Consider consulting a doctor.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <input type="text"
+                    class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
+                    placeholder="Type your message..." />
+                <button
+                    class="w-full bg-[#159ccb] text-white py-3 rounded-lg mt-4 hover:bg-blue-600 transition">Send</button>
+            </div>
+        </section>
+    </div>
+
+
+</body>
