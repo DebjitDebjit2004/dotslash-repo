@@ -5,7 +5,7 @@
         <!-- Detection Section -->
         <section class="container mx-auto py-12 px-6 lg:px-20">
             <h1 class="text-4xl font-bold text-center text-[#159ccb] mb-10">Diabetes Detection Tool</h1>
-            <form id="detection-form" class="bg-white shadow-lg rounded-lg p-10 space-y-8 max-w-2xl mx-auto">
+            <form action="/chatbot" method="get" id="detection-form" class="bg-white shadow-lg rounded-lg p-10 space-y-8 max-w-2xl mx-auto">
                 <!-- Age -->
                 <div>
                     <label class="block text-lg font-medium mb-2" for="age">Age</label>
@@ -59,7 +59,7 @@
                     <label class="block text-lg font-medium mb-2" for="bmi">Insulin</label>
                     <input type="number" id="bmi" placeholder="Enter Insulin"
                         class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#159ccb]"
-                        name="detection[Insulin]" />
+                        name="detection[insulin]" />
                 </div>
 
                 <!-- Diabetes Pedigree -->

@@ -32,7 +32,6 @@ async function dbConnect() {
     mongoose.connect("mongodb://127.0.0.1:27017/mecare")
 }
 
-
 const sessionOptions = {
     secret: "mysecretsuperkey",
     resave: false,
@@ -68,11 +67,12 @@ app.get("/detection", isLoggedin, (req, res)=> {
     res.render("./Pages/detection")
 });
 
-app.post("/chatbot", isLoggedin, wrapAsync(async(req, res)=>{
+app.get("/chatbot", isLoggedin, wrapAsync(async(req, res)=>{
     const newDetection = new DetectionData(req.body.detection);
+    console.log(req.body.detection)
     newDetection.author = req.user._id;
     await newDetection.save();
-    res.redirect("./Pages/chatbot");
+    res.render("./Pages/chatbot")
 }));
 
 app.get("/patient/register", (req, res)=>{
@@ -100,7 +100,7 @@ app.get("/patient/login", (req, res)=>{
     res.render("./Pages/login");
 })
 
-app.post("/patient/login", passport.authenticate("local", { failureRedirect: "/patient/login", failureFlash: true, }), async(req, res) =>{
+app.post("/patient/login", saveRedirectUrl, passport.authenticate("local", { failureRedirect: "/",}), async(req, res) =>{
     let redirectUrl = res.locals.redirectUrl || "/";
     res.redirect(redirectUrl);
 })
