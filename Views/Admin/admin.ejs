@@ -1,0 +1,54 @@
+<% layout("/Layouts/adminBP") %>
+<body class="flex bg-gray-100 min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-64 bg-blue-500 text-white flex flex-col h-screen">
+        <h2 class="text-2xl font-bold text-center py-6">Diabetes Admin</h2>
+        <nav>
+            <ul class="space-y-2">
+                <li><a href="dashboard.html" class="flex items-center p-3 hover:bg-blue-600"><i
+                            class="fa fa-home mr-3"></i>Dashboard</a></li>
+                <li><a href="users.html" class="flex items-center p-3 hover:bg-blue-600"><i
+                            class="fa fa-users mr-3"></i>Users</a></li>
+                <li><a href="test_results.html" class="flex items-center p-3 hover:bg-blue-600"><i
+                            class="fa fa-diagnoses mr-3"></i>Test Results</a></li>
+                <li><a href="enquiries.html" class="flex items-center p-3 hover:bg-blue-600"><i
+                            class="fa fa-envelope mr-3"></i>Enquiries</a></li>
+                <li><a href="settings.html" class="flex items-center p-3 hover:bg-blue-600"><i
+                            class="fa fa-cog mr-3"></i>Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 flex flex-col p-6">
+        <!-- Header -->
+        <header class="flex justify-between items-center mb-6">
+            <h1 class="text-3xl font-semibold text-gray-700">Admin Dashboard</h1>
+            <div class="flex items-center">
+                <img src="this is ankit.png" alt="Admin" class="w-10 h-10 rounded-full mr-2">
+                <span class="text-gray-700">Welcome, Admin</span>
+            </div>
+        </header>
+
+        <!-- Dashboard Cards -->
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-medium text-blue-600">Total Users</h3>
+                <p class="mt-2 text-2xl font-semibold text-gray-700">120</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-medium text-blue-600">Tests Conducted</h3>
+                <p class="mt-2 text-2xl font-semibold text-gray-700">75</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-medium text-blue-600">Positive Cases</h3>
+                <p class="mt-2 text-2xl font-semibold text-gray-700">30</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-medium text-blue-600">Pending Enquiries</h3>
+                <p class="mt-2 text-2xl font-semibold text-gray-700">10</p>
+            </div>
+        </section>
+    </div>
+</body>
